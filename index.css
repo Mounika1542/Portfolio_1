@@ -1,172 +1,132 @@
-body{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: whitesmoke;
-}
-header{
-    background-color: orange;
-    color: black;
-    text-align: center;
-    padding: 5px;
-}
-.content{
-    max-width: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-header h1{
-    margin-top: 20px;
-    text-align: center;
-    font-weight: bolder;
-    font-size: xx-large;
-    padding-left: 250px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-style:inherit;
-}
-nav ul{
-    list-style: none;
-    display: flex;
-}
-nav ul li a{
-    margin-right: 20px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(76, 0, 255);
-}
-#mini{
-    background-image:url(mini-proj\ img.jpeg);
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    display: flex;
-    color: white;
-    font-size: xx-large;
-    align-items: center;
-    justify-content: space-around;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    
-}
-.mini-content{
-    background-color: rgb(0,0,0,0.5);
-    padding: 50px;
+body {
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: whitesmoke;
 }
 
-#about{
-    background-color:rgb(243, 198, 159);
-    padding: 20px;
-    text-align: left;
-    height: 400px;
-}
-#about h2{
-    color: #3533ff;
-    background-color: orange;
-    margin-top: 15px;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: x-large;
-}
-#about h4{
-    font-size: x-large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: start;
-}
-#about p{
-    text-align: left;
-    text-decoration: none;
-    font-size: large;
-}
-#about table{
-    text-align: center;
-}
-#skills{
-    background-color: bisque;
-    padding: 20px;
-    text-align: left;
-    height: 300px;
-}
-#skills h2{
-    color: #3533ff;
-    background-color: orange;
-    margin-top: 15px;
-    text-align:center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: x-large;
-}
-#skills p{
-    text-align: start;
-    font-size: large;
-}
-#skills ul{
-    margin-left: 20px;
-    font-size: large;
-    padding: 10px;
-    text-align: start;
-}
-#skills li{
-    margin-bottom: 10px;
-    text-align: start;
+/* Header */
+header {
+background-color: orange;
+color: black;
+text-align: center;
+padding: 10px;
 }
 
-#projects{
-    background-color:wheat;
-    padding: 20px;
-    text-align: left;
-    height: 300px;
-}
-#projects h2{
-    color: #3533ff;
-    background-color: orange;
-    margin-top: 15px;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: x-large;
-}
-#projects li{
-    text-align: left;
-    text-decoration: none;
-    font-size: large;
-    padding: 10px;
-}
-#contact{
-    background-color:antiquewhite;
-    padding: 20px;
-    text-align: left;
-    height: 300px;
-}
-#contact h2{
-    color: #3533ff;
-    background-color: orange;
-    margin-top: 15px;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: x-large;
-}
-#contact li{
-    margin-bottom: 10px;
-    text-align: left;
-    padding: 5px;
-    
-}
-footer{
-    background-color: rgb(231, 195, 104);
-    text-align: center;
-    padding: 5px;
+header h1 {
+margin-top: 20px;
+font-weight: bolder;
+font-size: xx-large;
+padding-left: 250px;
+font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
 }
 
-#about :hover,
-#skills :hover,#projects :hover,
-#contact :hover{
-    color: black;
-    cursor: pointer;
+/* Navigation */
+.content {
+max-width: 100%;
+margin: 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
-@media screen and (max-width:768px) {
-    #about, #skills, #projects #contact{
-        text-align: center;
-    }
+nav ul {
+list-style: none;
+display: flex;
+}
+
+nav ul li a {
+margin-right: 20px;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+color: rgb(76, 0, 255);
+text-decoration: none;
+}
+
+/* Hero Section */
+#mini {
+background-image: url("mini-proj img.jpeg");
+background-size: cover;
+background-position: center;
+height: 500px;
+display: flex;
+color: white;
+font-size: xx-large;
+align-items: center;
+justify-content: space-around;
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-align: center;
+}
+
+.mini-content {
+background-color: rgba(0, 0, 0, 0.5);
+padding: 50px;
+}
+
+/* Sections */
+#about, #skills, #projects, #contact {
+padding: 20px;
+text-align: left;
+}
+
+/* Background colors */
+#about { background-color: rgb(243, 198, 159); }
+#skills { background-color: bisque; }
+#projects { background-color: wheat; }
+#contact { background-color: antiquewhite; }
+
+/* Headings */
+#about h2, #skills h2, #projects h2, #contact h2 {
+color: #3533ff;
+background-color: orange;
+text-align: center;
+margin-top: 15px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: x-large;
+}
+
+/* Lists & text */
+#about h4 {
+font-size: x-large;
+font-family: Cambria, Georgia, serif;
+}
+
+#about p,
+#skills p,
+#projects li,
+#contact li {
+font-size: large;
+}
+
+/* Hover fix — only text inside section turns black */
+#about *:hover,
+#skills *:hover,
+#projects *:hover,
+#contact *:hover {
+color: black;
+cursor: pointer;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+#about, #skills, #projects, #contact {
+text-align: center;
+}
+
+```
+header h1 {
+    padding-left: 0;
+    font-size: x-large;
+}
+
+nav ul {
+    flex-direction: column;
+    text-align: center;
+}
+
+nav ul li a {
+    margin: 10px 0;
+}
+```
 
 }
